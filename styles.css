@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    
+}
+
+.header {
+    background-color: #1b1b1b;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    color: #000;
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+   
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background-color: #34709a;
+    transition: 0.5s;
+}
+
+/* TOGGLE */
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+.imgan {
+    margin: auto;
+    padding-left: 5%;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+ 
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    color: azure;
+    background-color: #1b1b1b;
+}
+
+p{
+    margin-top: 70px;
+    padding: 40px;
+    text-align: center;
+}
+.container .responsiva {
+    display: inline-block;
+    width: 25%;
+
+}
+
+.responsiva {
+    height: 300px;
+    width: 120%;
+}
+
+.container .responsiva img {
+    width: 64%;
+    height: 100%;
+    padding: 40px;
+    margin-top: 10px;
+}
+.proy{
+    margin-top: 10px;
+    padding: 40px;
+    text-align: center;
+    color: azure;
+    background-color: #1b1b1b;
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #2c3e50;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #83c5f7;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+}
